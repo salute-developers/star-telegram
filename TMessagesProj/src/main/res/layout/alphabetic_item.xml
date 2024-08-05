@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/sbdv_92dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/letterTextView"
+        android:layout_width="match_parent"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="Ж"
+        tools:textSize="@dimen/font_size_alphabetic_letter" />
+
+</LinearLayout>

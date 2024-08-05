@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- закругленный аватар -->
+    <ru.sberdevices.sbdv.view.AvatarView
+        android:id="@+id/main_photo"
+        android:layout_width="@dimen/card_avatar_size"
+        android:layout_height="@dimen/card_avatar_size"
+        app:cardCornerRadius="@dimen/card_avatar_corner_radius" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_bubble_info"
+        android:layout_width="@dimen/card_avatar_bubble_info_size"
+        android:layout_height="@dimen/card_avatar_bubble_info_size"
+        android:layout_alignEnd="@+id/main_photo"
+        android:layout_alignBottom="@+id/main_photo"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/card_red"
+        app:cardCornerRadius="@dimen/card_avatar_bubble_info_corner_radius">
+
+        <TextView
+            android:id="@+id/card_bubble_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sbdv_recent_call_number_text_size"
+            android:textAppearance="@style/TextAppearance.Sbdv.Subtitle2"
+            tools:text="2" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

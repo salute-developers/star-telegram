@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/sbdv_positive_btn_r24_background"
+        android:bottom="@dimen/sbdv_indented_button_padding"
+        android:left="@dimen/sbdv_indented_button_padding"
+        android:right="@dimen/sbdv_indented_button_padding"
+        android:top="@dimen/sbdv_indented_button_padding" />
+</layer-list>

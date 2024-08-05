@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logoutButtonLayout"
+    android:layout_width="@dimen/logout_button_width"
+    android:layout_height="@dimen/logout_button_height"
+    android:background="@drawable/sbdv_neutral_indented_btn_r24_background"
+    android:focusableInTouchMode="false"
+    android:foreground="@drawable/sbdv_selector_focusable_indented_btn_r24"
+    android:gravity="center"
+    android:padding="@dimen/margin_default">
+
+    <ImageView
+        android:layout_width="@dimen/logout_icon_width"
+        android:layout_height="@dimen/logout_icon_height"
+        android:contentDescription="@string/sbdv_logout"
+        android:src="@drawable/ic_logout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+        android:text="@string/sbdv_logout"
+        android:textAllCaps="false"
+        android:textColor="@color/card_text_white"
+        android:textSize="@dimen/logout_button_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

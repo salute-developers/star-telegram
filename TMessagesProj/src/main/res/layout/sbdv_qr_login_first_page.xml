@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/qr_login_first_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sbdv_new_background"
+    tools:ignore="MissingDefaultResource">
+
+    <Button
+        android:id="@+id/sbdv_qr_first_page_ready_button"
+        style="@style/TextAppearance.Sbdv.QrLoginPositiveButton"
+        android:layout_width="@dimen/sbdv_qr_login_ready_button_width"
+        android:layout_height="@dimen/sbdv_qr_login_button_height"
+        android:layout_marginTop="@dimen/sbdv_qr_login_button_margin_top"
+        android:paddingHorizontal="@dimen/sbdv_qr_login_button_horizontal_padding"
+        android:text="@string/sbdv_qr_login_ready_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sbdv_qr_first_page_title"
+        app:layout_constraintTop_toBottomOf="@+id/sbdv_qr_first_page_title" />
+
+    <Button
+        android:id="@+id/sbdv_qr_first_page_login_by_phone"
+        style="@style/TextAppearance.Sbdv.QrLoginNeutralButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sbdv_qr_login_button_height"
+        android:layout_marginEnd="@dimen/sbdv_qr_login_by_phone_button_margin_end"
+        android:layout_marginTop="@dimen/sbdv_qr_login_button_margin_top"
+        android:paddingHorizontal="@dimen/sbdv_qr_login_button_horizontal_padding"
+        android:text="@string/sbdv_qr_login_by_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sbdv_picture"
+        android:layout_width="@dimen/sbdv_qr_login_picture_width"
+        android:layout_height="@dimen/sbdv_qr_login_picture_height"
+        android:layout_marginEnd="@dimen/sbdv_qr_login_picture_margin_end"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_fluent_phone_checkmark"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sbdv_qr_first_page_title"
+        style="@style/TextAppearance.Sbdv.QrLoginTitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sbdv_qr_login_title_margin_start"
+        android:text="@string/sbdv_qr_login_first_page_title"
+        app:layout_constraintBottom_toTopOf="@+id/sbdv_qr_first_page_ready_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

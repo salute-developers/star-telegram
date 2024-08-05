@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+    <dimen name="custom_notification_corner_radius">2dip</dimen>
+
+    <!-- FontWeight-->
+    <integer name="semiBold_font_weight">600</integer>
+    <integer name="bold_font_weight">700</integer>
+</resources>

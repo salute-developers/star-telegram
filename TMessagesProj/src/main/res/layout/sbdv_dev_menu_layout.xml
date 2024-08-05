@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/sbdv_dev_menu_width"
+    android:layout_height="@dimen/sbdv_dev_menu_height"
+    android:background="@drawable/user_menu_background"
+    android:orientation="vertical"
+    android:padding="@dimen/sbdv_dev_menu_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sbdv_dev_menu_text_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+            android:text="Mock calls"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/mockCallsToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sbdv_dev_menu_button_margin"
+            android:background="@drawable/sbdv_dev_toggle_btn_r24_background"
+            android:textOff="@string/sbdv_dev_off"
+            android:textOn="@string/sbdv_dev_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sbdv_dev_menu_text_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+            android:text="@string/sbdv_dev_crop_source_resolution"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size" />
+
+        <Spinner
+            android:id="@+id/sbdv_crop_source_resolution"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="@color/sbdv_white"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sbdv_dev_menu_text_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+            android:text="@string/sbdv_dev_dewarp_by_crop"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/sbdv_dewarp_by_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sbdv_dev_menu_button_margin"
+            android:background="@drawable/sbdv_dev_toggle_btn_r24_background"
+            android:textOff="@string/sbdv_dev_off"
+            android:textOn="@string/sbdv_dev_on" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sbdv_dev_menu_text_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+            android:text="@string/sbdv_dev_capture_fps"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size" />
+
+        <EditText
+            android:id="@+id/sbdv_capture_fps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sbdv_dev_menu_button_margin"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sbdv_dev_menu_text_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing_extra_double_size"
+            android:text="@string/sbdv_dev_avoid_h265_encoder"
+            android:textColor="@color/card_text_white"
+            android:textSize="@dimen/sbdv_dev_menu_text_size" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/sbdv_avoid_h265_encoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sbdv_dev_menu_button_margin"
+            android:background="@drawable/sbdv_dev_toggle_btn_r24_background"
+            android:textOff="@string/sbdv_dev_off"
+            android:textOn="@string/sbdv_dev_on" />
+
+    </LinearLayout>
+
+</LinearLayout>

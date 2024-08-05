@@ -1,0 +1,75 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/sbdv_contacts_padding_start"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/alphabeticRecyclerView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:itemCount="1"
+        tools:listitem="@layout/sbdv_contact" />
+
+    <ImageView
+        android:id="@+id/arrowStartImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_left_20x36dp"
+        app:layout_constraintBottom_toBottomOf="@id/alphabeticRecyclerView"
+        app:layout_constraintEnd_toStartOf="@id/alphabeticRecyclerView"
+        app:layout_constraintTop_toTopOf="@id/alphabeticRecyclerView"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/centerLetterBackgroundImageView"
+        android:layout_width="@dimen/sbdv_contacts_center_letter_background_size"
+        android:layout_height="@dimen/sbdv_contacts_center_letter_background_size"
+        android:src="@drawable/sbdv_background_selected_letter"
+        app:layout_constraintBottom_toBottomOf="@id/alphabeticRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/alphabeticRecyclerView"
+        app:layout_constraintStart_toStartOf="@id/alphabeticRecyclerView"
+        app:layout_constraintTop_toTopOf="@id/alphabeticRecyclerView"
+        tools:ignore="ContentDescription" />
+
+    <ru.sberdevices.sbdv.view.alphabeticrecyclerview.AlphabeticRecyclerView
+        android:id="@+id/alphabeticRecyclerView"
+        android:layout_width="@dimen/sbdv_contacts_alphabetic_width"
+        android:layout_height="@dimen/sbdv_contacts_alphabetic_height"
+        android:layout_margin="@dimen/sbdv_contacts_alphabetic_margin"
+        android:orientation="horizontal"
+        app:fontSize="@dimen/sbdv_contacts_alphabetic_text_size"
+        app:itemsColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsRecyclerView"
+        tools:itemCount="7"
+        tools:listitem="@layout/alphabetic_item" />
+
+    <ImageView
+        android:id="@+id/arrowEndImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right_20x36dp"
+        app:layout_constraintBottom_toBottomOf="@id/alphabeticRecyclerView"
+        app:layout_constraintStart_toEndOf="@id/alphabeticRecyclerView"
+        app:layout_constraintTop_toTopOf="@id/alphabeticRecyclerView"
+        tools:ignore="ContentDescription" />
+
+    <include
+        android:id="@+id/emptyContactsLayout"
+        layout="@layout/sbdv_empty_contacts_layout"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

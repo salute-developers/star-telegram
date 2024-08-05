@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tabButtons"
+    android:layout_marginBottom="@dimen/sbdv_empty_contacts_bottom_margin">
+
+    <FrameLayout
+        android:layout_width="@dimen/sbdv_empty_contacts_frame_size"
+        android:layout_height="@dimen/sbdv_empty_contacts_frame_size"
+        android:background="@drawable/background_circles">
+
+        <ImageView
+            android:id="@+id/emptyContactsIcon"
+            android:layout_width="@dimen/sbdv_empty_contacts_image_size"
+            android:layout_height="@dimen/sbdv_empty_contacts_image_size"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_user_on_user" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/emptyContactsMessageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sbdv_empty_contacts_title_margin"
+        android:letterSpacing="-0.03"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sbdv_empty_contacts_title_text_size"
+        android:textStyle="bold"
+        tools:text="@string/sbdv_no_recent_calls" />
+
+    <TextView
+        android:id="@+id/emptyContactsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sbdv_empty_contacts_title_margin"
+        android:letterSpacing="-0.03"
+        android:textColor="#88FFFFFF"
+        android:textSize="@dimen/sbdv_empty_contacts_message_text_size"
+        tools:text="@string/sbdv_time_to_say_salute" />
+
+</LinearLayout>

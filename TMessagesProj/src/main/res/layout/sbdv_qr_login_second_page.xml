@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/qr_login_second_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sbdv_new_background"
+    tools:ignore="MissingDefaultResource">
+
+    <Button
+        android:id="@+id/sbdv_qr_login_second_page_login_by_phone"
+        style="@style/TextAppearance.Sbdv.QrLoginNeutralButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/sbdv_qr_login_button_height"
+        android:layout_marginEnd="@dimen/sbdv_qr_login_by_phone_button_margin_end"
+        android:layout_marginTop="@dimen/sbdv_qr_login_button_margin_top"
+        android:paddingHorizontal="@dimen/sbdv_qr_login_button_horizontal_padding"
+        android:text="@string/sbdv_qr_login_by_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sbdv_qr_login_second_page_back_button"
+        android:layout_width="@dimen/sbdv_qr_login_back_button_width_height"
+        android:layout_height="@dimen/sbdv_qr_login_back_button_width_height"
+        android:layout_marginStart="@dimen/sbdv_qr_login_back_button_margin_start"
+        android:background="@drawable/sbdv_selector_focusable_button_24"
+        android:contentDescription="@null"
+        android:src="@drawable/sbdv_ic_24_chevron_left_outline"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/sbdv_qr_login_second_page_login_by_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sbdv_qr_login_second_page_login_by_phone" />
+
+    <ImageView
+        android:id="@+id/sbdv_qr_login_second_page_qr_image"
+        android:layout_width="@dimen/sbdv_qr_login_code_image_width_height"
+        android:layout_height="@dimen/sbdv_qr_login_code_image_width_height"
+        android:layout_marginEnd="@dimen/sbdv_qr_login_code_image_margin_end"
+        android:contentDescription="@null"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/sbdv_qr_login_second_page_progress"
+        android:layout_width="@dimen/sbdv_qr_login_progress_bar_width_height"
+        android:layout_height="@dimen/sbdv_qr_login_progress_bar_width_height"
+        android:indeterminateTint="@color/sbdv_green"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/sbdv_qr_login_second_page_qr_image"
+        app:layout_constraintEnd_toEndOf="@+id/sbdv_qr_login_second_page_qr_image"
+        app:layout_constraintStart_toStartOf="@+id/sbdv_qr_login_second_page_qr_image"
+        app:layout_constraintTop_toTopOf="@+id/sbdv_qr_login_second_page_qr_image" />
+
+    <TextView
+        android:id="@+id/sbdv_qr_second_page_title"
+        style="@style/TextAppearance.Sbdv.QrLoginTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sbdv_qr_login_title_margin_start"
+        android:text="@string/sbdv_qr_login_second_page_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
